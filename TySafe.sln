@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TySafe.Api", "TySafe.Api\TySafe.Api.csproj", "{EDF0807C-84FB-4021-B300-E891498E0359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TySafe.Mobile", "TySafe.Mobile\TySafe.Mobile.csproj", "{277A678B-028C-42B7-A90D-4EB840720A42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDF0807C-84FB-4021-B300-E891498E0359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF0807C-84FB-4021-B300-E891498E0359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF0807C-84FB-4021-B300-E891498E0359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF0807C-84FB-4021-B300-E891498E0359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{277A678B-028C-42B7-A90D-4EB840720A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277A678B-028C-42B7-A90D-4EB840720A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277A678B-028C-42B7-A90D-4EB840720A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277A678B-028C-42B7-A90D-4EB840720A42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
