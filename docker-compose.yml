@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tysafe.api.gateway:
+    image: ${DOCKER_REGISTRY-}tysafeapigateway
+    build:
+      context: .
+      dockerfile: TySafe.Api.Gateway/Dockerfile

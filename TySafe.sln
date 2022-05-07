@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32427.441
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TySafe.Api", "TySafe.Api\TySafe.Api.csproj", "{EDF0807C-84FB-4021-B300-E891498E0359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TySafe.Mobile", "TySafe.Mobile\TySafe.Mobile.csproj", "{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TySafe.Mobile", "TySafe.Mobile\TySafe.Mobile.csproj", "{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{B5CAEF50-40C7-4DE9-8C5C-3079C00AEE88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TySafe.Api.Gateway", "TySafe.Api.Gateway\TySafe.Api.Gateway.csproj", "{9D19E7BA-E4B7-42C7-8648-9F88886CFD2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{B113E171-52A6-4769-A97D-903DB0D021E8}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +19,28 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EDF0807C-84FB-4021-B300-E891498E0359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EDF0807C-84FB-4021-B300-E891498E0359}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EDF0807C-84FB-4021-B300-E891498E0359}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EDF0807C-84FB-4021-B300-E891498E0359}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9D19E7BA-E4B7-42C7-8648-9F88886CFD2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D19E7BA-E4B7-42C7-8648-9F88886CFD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D19E7BA-E4B7-42C7-8648-9F88886CFD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D19E7BA-E4B7-42C7-8648-9F88886CFD2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0} = {B113E171-52A6-4769-A97D-903DB0D021E8}
+		{9D19E7BA-E4B7-42C7-8648-9F88886CFD2D} = {B5CAEF50-40C7-4DE9-8C5C-3079C00AEE88}
+		{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8} = {B5CAEF50-40C7-4DE9-8C5C-3079C00AEE88}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F62A870-389E-4352-86A9-AB9ADA3CD5E4}

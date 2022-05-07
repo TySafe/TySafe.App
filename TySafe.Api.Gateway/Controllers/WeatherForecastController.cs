@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace TySafe.Api.Controllers
+namespace TySafe.Api.Gateway.Controllers
 {
 	[ApiController]
 	[Route("[controller]")]

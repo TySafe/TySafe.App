@@ -1,6 +1,6 @@
 using System;
 
-namespace TySafe.Api
+namespace TySafe.Api.Gateway
 {
 	public class WeatherForecast
 	{

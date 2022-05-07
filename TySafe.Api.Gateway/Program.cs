@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace TySafe.Api
+namespace TySafe.Api.Gateway
 {
 	public class Program
 	{
