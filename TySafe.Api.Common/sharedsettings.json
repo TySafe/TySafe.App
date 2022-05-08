@@ -7,7 +7,7 @@
         ],
         
         "MinimumLevel": {
-            "Default": "Debug",
+            "Default": "Information",
             "Override": {
                 "Default": "Information",
                 "Microsoft": "Warning",

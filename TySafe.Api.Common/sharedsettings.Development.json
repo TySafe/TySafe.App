@@ -1,0 +1,25 @@
+﻿{
+    "Serilog": {
+        "Using": [
+            "Serilog.Sinks.Console",
+            "Serilog.Sinks.File",
+            "Serilog.Sinks.File.Gzip",
+            "Serilog.Sinks.Seq"
+        ],
+        
+        "MinimumLevel": {
+            "Default": "Debug"
+        },
+
+        "WriteTo": [
+            { "Name": "Console" },
+
+            { 
+                "Name": "Seq",
+                "Args": {
+                    "ServerUrl": "http://seq:5341"
+                }
+            }
+        ]
+    }
+}
