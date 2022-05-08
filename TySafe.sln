@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{B113E1
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TySafe.Api.Common", "TySafe.Api.Common\TySafe.Api.Common.csproj", "{C0458C83-1ED6-4D0B-A30E-C6B51741F304}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0458C83-1ED6-4D0B-A30E-C6B51741F304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0458C83-1ED6-4D0B-A30E-C6B51741F304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0458C83-1ED6-4D0B-A30E-C6B51741F304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0458C83-1ED6-4D0B-A30E-C6B51741F304}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{5FD6544A-E7A9-4ABC-849B-DEEC55EF22C0} = {B113E171-52A6-4769-A97D-903DB0D021E8}
 		{9D19E7BA-E4B7-42C7-8648-9F88886CFD2D} = {B5CAEF50-40C7-4DE9-8C5C-3079C00AEE88}
 		{1A33056E-F225-4659-AEAC-EC9D8EF2C3B8} = {B5CAEF50-40C7-4DE9-8C5C-3079C00AEE88}
+		{C0458C83-1ED6-4D0B-A30E-C6B51741F304} = {B5CAEF50-40C7-4DE9-8C5C-3079C00AEE88}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F62A870-389E-4352-86A9-AB9ADA3CD5E4}

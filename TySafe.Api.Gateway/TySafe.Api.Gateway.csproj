@@ -15,4 +15,8 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TySafe.Api.Common\TySafe.Api.Common.csproj" />
+    </ItemGroup>
+
 </Project>

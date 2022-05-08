@@ -1,0 +1,33 @@
+﻿{
+    "Serilog": {
+        "Using": [ 
+            "Serilog.Sinks.Console", 
+            "Serilog.Sinks.File", 
+            "Serilog.Sinks.File.Gzip"
+        ],
+        
+        "MinimumLevel": {
+            "Default": "Debug",
+            "Override": {
+                "Default": "Information",
+                "Microsoft": "Warning",
+                "Microsoft.Hosting.Lifetime": "Information"
+            }
+        },
+        
+        "WriteTo": [
+            { "Name": "Console" }
+            
+            /*{ 
+                "Name": "File", 
+                
+                "Args": {
+                    "Path": "./logs/tysafe.log.gz", 
+                    "FileSizeLimit": "10MB", 
+                    "RollingInterval": "Day",
+                    "Hooks": "Serilog.Sinks.File.GZip.GZipHooks, Serilog.Sinks.File.GZip"
+                } 
+            }*/
+        ]
+    }
+}
