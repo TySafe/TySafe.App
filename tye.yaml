@@ -1,0 +1,37 @@
+# tye application configuration file
+# read all about it at https://github.com/dotnet/tye
+#
+# when you've given us a try, we'd love to know what you think:
+#    https://aka.ms/AA7q20u
+#
+name: tysafe
+solution: TySafe.sln
+
+network: tysafe
+
+extensions:
+- name: seq
+  logPath: ./.logs
+
+services:
+- name: gateway
+  project: ./TySafe.Api.Gateway/TySafe.Api.Gateway.csproj
+  bindings:
+    - port: 5000
+      containerPort: 5000
+  
+
+- name: gateway-db
+  image: postgres
+  bindings:
+  - connectionString: Server=${host};Port=${port};User Id=postgres;Password=${env:POSTGRES_PASSWORD};Database=tysafe_gateway
+    port: 5432
+    
+  env:
+    - name: POSTGRES_PASSWORD
+      value: postgres
+      
+- name: adminer
+  image: adminer
+  bindings:
+  - port: 8080

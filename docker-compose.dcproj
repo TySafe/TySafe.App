@@ -14,5 +14,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="launchSettings.json" />
+    <Content Include="tye.yaml" />
   </ItemGroup>
 </Project>

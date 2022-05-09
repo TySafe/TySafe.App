@@ -12,12 +12,12 @@ public static class AppConfigurationExtensions
 		builder.ConfigureAppConfiguration((context, config) =>
 		{
 			config
-//#if DEBUG				
-//				.AddJsonFile("../TySafe.Api.Common/sharedsettings.json", optional: true, reloadOnChange: true)
-//#else				
-				.AddJsonFile("sharedsettings.json", optional: false, reloadOnChange: true)
-				.AddJsonFile($"sharedsettings.{context.HostingEnvironment.EnvironmentName}.json", optional: false, reloadOnChange: true)
-//#endif
+#if DEBUG				
+				.AddJsonFile("../TySafe.Api.Common/sharedsettings.json", optional: true, reloadOnChange: true)
+#endif			
+				.AddJsonFile("sharedsettings.json", optional: true, reloadOnChange: true)
+				.AddJsonFile($"sharedsettings.{context.HostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+				
 				.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
 				.AddJsonFile($"appsettings.{context.HostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true);
 		});

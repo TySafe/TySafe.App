@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  api.gateway:
+  gateway:
     hostname: gateway
     image: ${DOCKER_REGISTRY-}tysafeapigateway
     build:
@@ -10,7 +10,7 @@ services:
     depends_on:
       - api.gateway.database
 
-  api.gateway.database:
+  gateway-db:
     hostname: db.dateway
     image: postgres
     restart: always

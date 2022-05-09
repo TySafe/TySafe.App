@@ -1,0 +1,11 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">    
+    <ItemGroup>
+        <ProjectReference Include="../TySafe.Api.Common/TySafe.Api.Common.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="../TySafe.Api.Common/sharedsettings.*" Visible="false">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>
